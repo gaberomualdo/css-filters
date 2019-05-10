@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Filters</title>
+	<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		width: 100vw;
+		height: 100vh;
+	}
+	body > div {
+		width: 10vw;
+		height: 100vh;
+		display: block;
+		float: left;
+		background-image: url(bg.jpg);
+		background-size: 100vw auto;
+		background-position-y: center;
+		background-repeat: no-repeat;
+	}
+	body > div:nth-child(1) {
+		background-position-x: 0vw;
+	}
+	body > div:nth-child(2) {
+		background-position-x: -10vw;
+		filter: sepia(100%)
+	}
+	body > div:nth-child(3) {
+		background-position-x: -20vw;
+		filter: saturate(250%);
+	}
+	body > div:nth-child(4) {
+		background-position-x: -30vw;
+		filter: contrast(250%);
+	}
+	body > div:nth-child(5) {
+		background-position-x: -40vw;
+		filter: hue-rotate(180deg);
+	}
+	body > div:nth-child(6) {
+		background-position-x: -50vw;
+		filter: brightness(150%)
+	}
+	body > div:nth-child(7) {
+		background-position-x: -60vw;
+		filter: blur(3px);
+	}
+	body > div:nth-child(8) {
+		background-position-x: -70vw;
+		filter: grayscale(100%);
+	}
+	body > div:nth-child(9) {
+		background-position-x: -80vw;
+		filter: invert(25%);
+	}
+	body > div:nth-child(10) {
+		background-position-x: -90vw;
+		filter: opacity(50%);
+	}
+	</style>
+</head>
+<body>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</body>
+</html>
